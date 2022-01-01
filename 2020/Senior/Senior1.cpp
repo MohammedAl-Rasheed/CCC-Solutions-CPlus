@@ -5,7 +5,7 @@ using namespace std;
 
 bool sortcol( const vector<int>& v1,
                const vector<int>& v2 ) {
- return v1[1] < v2[1];
+ return v1[0] > v2[0];
 }
 
 int main() {
@@ -30,16 +30,27 @@ int main() {
 
     // (120 - 100) / (10 - 0)
     // (50 - 120) / (20 - 10)
-    int maxSpeed = 0;
-    for(int i = 0; i < timeVelocity.size(); i++) {
-        int speed = (timeVelocity[i+1][1] - timeVelocity[i][1]) / (timeVelocity[i+1][0] - timeVelocity[i][0]);
-        if (speed < 0) {
-            speed = -speed;
+    // print timevelocity
+    // for(int i = 0; i < timeVelocity.size(); i++) {
+    //     cout << timeVelocity[i][0] << " " << timeVelocity[i][1] << endl;
+    // }
+    int Vi = timeVelocity[0][1];
+    int Ti = timeVelocity[0][0];
+    double maxSpeed = 0;
+    double tempSpeed = 0;
+    for(int i = 0; i < timeVelocity.size() - 1; i++) {
+        if (timeVelocity[i+1][1] < Vi) {
+            tempSpeed = (double)(Vi - timeVelocity[i+1][1]) / (timeVelocity[i+1][0] - Ti);
         }
-        if (speed < maxSpeed) {
-            maxSpeed = speed;
+        else {
+            tempSpeed = (double)(timeVelocity[i+1][1] - Vi) / (timeVelocity[i+1][0] - Ti);
+        }
+        Vi = timeVelocity[i+1][1];
+        Ti = timeVelocity[i+1][0];
+        if (tempSpeed > maxSpeed) {
+            maxSpeed = tempSpeed;
         }
     }
-    cout << maxSpeed << "\n";
-
+    cout.precision(1); 
+    cout << fixed << maxSpeed << endl;
 }
