@@ -1,7 +1,7 @@
 # SLSS-CodeClub-CCC-Solutions
  - **2021**
 	 - s1 - 15/15
-	 - s2 - 
+	 - s2 - 10/15 I tried a bunch of different solutions, cant figure out the last subtask
 	 - s3 -
 	 - s4 - 
 	 - s5 - 
