@@ -8,7 +8,7 @@
  - **2020**
 	 - s1 - 15/15
 	 - s2 - 15/15
-	 - s3 - 
+	 - s3 - 7/15 i think i have to use hashing instead of compare strings
 	 - s4 - 
 	 - s5 - 
  - **2019**

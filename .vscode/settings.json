@@ -46,6 +46,8 @@
         "typeinfo": "cpp",
         "ctime": "cpp",
         "map": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp"
     }
 }
