@@ -1,4 +1,4 @@
-# SLSS-CodeClub-CCC-Solutions
+# CCC-Solutions
  - **2021**
 	 - s1 - 15/15
 	 - s2 - 10/15 I tried a bunch of different solutions, cant figure out the last subtask
